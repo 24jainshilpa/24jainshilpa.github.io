@@ -3,7 +3,7 @@
                  
      <div class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile" src="https://github.com/24jainshilpa/24jainshilpa.github.io/blob/master/assets/images/profile.png" alt="profile picture" />
+                <img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
                 <h1 class="name">{% if site.name %}{{site.name}}{% else %}Shilpa Jain{% endif %}</h1>
                 <h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Performance Test Engineer{% endif %}</h3>
             </div><!--//profile-container-->
